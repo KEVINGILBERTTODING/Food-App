@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_20sdp"
+    >
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="@font/popsem"
+        android:hint="Harga"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtPrice"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:fontFamily="@font/popsem"
+        android:maxLength="30"
+        android:hint="Nama Menu"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPrice"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/popsem"
+        android:hint="Deskripsi"
+        android:inputType="textAutoComplete"
+        android:textSize="17sp" />
+
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btnpilihGambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pilih"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/add"
+        android:fontFamily="@font/popmed"
+        android:text="Pilih"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_below="@+id/edtDesc"
+
+        />
+
+    <EditText
+        android:id="@+id/edtPathName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDesc"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/popmed"
+        android:hint="Path Image"
+        android:inputType="textAutoComplete"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnpilihGambar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/add"
+        android:elevation="10dp"
+        android:fontFamily="@font/popmed"
+        android:text="Update"
+        android:textColor="#ffffff" />
+
+
+
+</RelativeLayout>

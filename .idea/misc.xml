@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/food/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/food/app/src/main/res/layout/food_items.xml" value="0.25" />
+        <entry key="..\:/food/app/src/main/res/layout/food_list_activity.xml" value="0.22" />
+        <entry key="..\:/food/app/src/main/res/layout/update_food_activity.xml" value="0.17552083333333332" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/Tambah_foreground.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/add.xml" value="0.3075523202911738" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/btnDashboard.xml" value="0.3075523202911738" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/btnadd.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/dashboard.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26481481481481484" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.26481481481481484" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/drawable/tambah.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/layout/food_items.xml" value="0.25" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/layout/food_list_activity.xml" value="0.15" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/layout/update_food_activity.xml" value="0.25" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/mipmap-anydpi-v26/Tambah.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/mipmap-anydpi-v26/Tambah_round.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17407407407407408" />
+        <entry key="..\:/share/Task-3/food/app/src/main/res/mipmap-anydpi-v26/tambah.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

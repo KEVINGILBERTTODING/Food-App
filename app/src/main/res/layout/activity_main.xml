@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/purple_200"
+        android:padding="@dimen/_20sdp">
+
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hi Kevin,"
+            android:fontFamily="@font/popsem"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name1"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/popmed"
+            android:text="Menu Apa saja yang tersedia?"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="-20dp"
+            android:layout_toRightOf="@id/tv_name2"
+            android:src="@drawable/asset2"
+
+            />
+
+        <Button
+            android:id="@+id/btnDashboard"
+            style="@style/Theme.Design.Light.NoActionBar"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/tv_name2"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/dashboard"
+            android:fontFamily="@font/popmed"
+            android:text="Dashboard"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_200" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header1"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/popmed"
+            android:text="Nama menu"
+            android:textSize="17sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/popmed"
+            android:maxLength="30"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtName"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/popmed"
+            android:text="Harga"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ems="10"
+            android:fontFamily="@font/popmed"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPrice"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/popmed"
+            android:text="Deskrpsi"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edtDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDesc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ems="10"
+            android:fontFamily="@font/popmed"
+            android:maxLength="50"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/edtPrice"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+
+        <LinearLayout
+            android:id="@+id/Linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtDesc"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/namaGambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/popmed"
+                android:hint="Path Image"
+                android:inputType="textAutoComplete"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/add"
+                android:fontFamily="@font/popmed"
+                android:text="Pilih"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Theme.Design.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Linear2"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:background="@drawable/add"
+            android:elevation="10dp"
+            android:fontFamily="@font/popmed"
+            android:text="Add"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
