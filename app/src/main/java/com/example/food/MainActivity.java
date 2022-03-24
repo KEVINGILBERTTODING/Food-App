@@ -53,12 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
         path_name     = findViewById(R.id.namaGambar);
         sqLiteHelper = new SQLiteHelper(this, "FoodDB.sqlite", null, 1);
-<<<<<<< HEAD
-        sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS FOOD(Id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, price VARCHAR, image BLOB)");
-=======
 
         sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS FOOD(Id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, price VARCHAR, description TEXT, image BLOB)");
->>>>>>> aa05a8e8511fcc68fbbc4d061e9963976e79eb01
 
         btnChoose.setOnClickListener(new View.OnClickListener() {
             @Override
